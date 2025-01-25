@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Waste Images{% endblock %}
+{% block content %}
+    <h2>Waste Images</h2>
+    <div class="waste-images">
+        {% for image in images %}
+            <div class="waste-item">
+                <img src="{{ image.image.url }}" alt="{{ image.description }}">
+                <p>{{ image.description }}</p>
+                <a href="{% url 'waste-detail' image.pk %}">View Details</a>
+            </div>
+        {% empty %}
+            <p>No waste images uploaded yet.</p>
+        {% endfor %}
+    </div>
+{% endblock %}

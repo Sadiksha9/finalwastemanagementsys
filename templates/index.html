@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Waste Management{% endblock %}
+{% block content %}
+
+<div class="container">
+    <h1 class="title">"Join us in revolutionizing waste management!"</h1>
+    <h2 class="subtitle">"Start Making a Difference Today – Manage Waste the Smarter Way."</h2>
+    <p class="subtitle">"Spot waste in your locality? Upload a picture and notify authorities instantly. Together, let’s keep Nepal clean."</p>
+    {% comment %} <img src="{% static 'images/waste-management.jpg' %}" alt="Waste Management" class="image"> {% endcomment %}
+    {% if not user.is_authenticated %}
+        <a href="{% url 'login' %}" class="button">Login</a>
+    {% endif %}
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Waste Image Detail{% endblock %}
+{% block content %}
+    <h2>Waste Image Details</h2>
+    <div class="waste-detail">
+        <img src="{{ object.image.url }}" alt="{{ object.description }}">
+        <p>Description: {{ object.description }}</p>
+        <p>Upload Date: {{ object.created_at }}</p>
+    </div>
+    <a href="{% url 'waste-list' %}">Back to List</a>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Waste Management{% endblock %}
+{% block content %}
+<h1>  Waste Tracking System </h1>
+
+    <form id="reportForm">
+        <div class="form-row">
+            <label for="description">Description:</label>
+            <textarea id="description" required></textarea>
+        </div>
+
+        <div class="form-row">
+            <label for="location">Location:</label>
+            <input type="text" id="location" required>
+        </div>
+
+        <div class="form-row">
+            <label for="wasteType">Waste Type:</label>
+            <select id="wasteType">
+                <option value="organic">Organic</option>
+                <option value="plastic">Plastic</option>
+                <option value="electronic">Electronic</option>
+                <option value="medical">Medical</option>
+                <option value="dead animals">dead animals</option>
+                <option value="cullet">cullet</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" accept="image/*" required>
+        </div>
+
+        <button>
+            <i class="fas fa-trash-alt"></i> Report Waste
+        </button>
+    </form>
+
+{% endblock %}

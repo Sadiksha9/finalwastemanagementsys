@@ -1,0 +1,179 @@
+Import Google Fonts
+@import url('https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs11356-023-28611-9/MediaObjects/11356_2023_28611_Fig1_HTML.png');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    background-color: white;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+img {
+    max-width: 90%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: white; 
+    backdrop-filter: none; 
+    color: flex;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 33px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    background: orange;
+    padding: 15px;
+    border-radius: 23px;
+    width: 100%;
+    max-width: 500px;
+    color : white;
+    margin: 0 auto;
+}
+
+/* Form Styles */
+form {
+    background: white;
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+label {
+    font-weight: 100;
+    margin-bottom: 5px;
+    color: blue;
+}
+
+input, textarea, select {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    width: calc(100% - 24px);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+
+}
+
+textarea {
+    resize: none;
+    height: 90px;
+    background-color: #e6f7ff; /* Light blue background */
+    color: #003366;
+}
+
+input[type="file"] {
+    background: none;
+    color: blanchedalmond;
+    cursor: pointer;
+}
+
+/* Centering the button properly */
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #00a86b;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    max-width: 220px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+button:hover {
+    background: red;
+    transform: scale(1.05);
+}
+
+button i {
+    font-size: 20px;
+}
