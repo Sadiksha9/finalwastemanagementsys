@@ -34,7 +34,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER ='kcneupanesadiksha@gmail.com'
-EMAIL_HOST_PASSWORD = 'oddj tdpb itno qonh'  # Use app passwords for Gmail
+EMAIL_HOST_PASSWORD = ''  # Use app passwords for Gmail
 
 
 LOGIN_URL = 'login'
